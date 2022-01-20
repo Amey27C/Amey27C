@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static' , filename= 'tablestyle.css') }}">
+    <title>Results</title>
+</head>
+<body>
+<form>
+    <table class="content-table">
+
+        <thead>
+
+            <tr>
+                <th><h3>Products from Flipkart</h3></th>
+                <th><h3>Prices</h3></th>
+            </tr>
+
+        </thead>
+
+        {% for item in product %}
+        <tr>
+            <td>{{item.title}}</td>
+            <td>{{item.price}}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+    <table class="content-table">
+
+        <thead>
+
+            <tr>
+                <th><h3>Products from eBay</h3></th>
+                <th><h3>Prices</h3></th>
+            </tr>
+
+        </thead>
+
+        {% for item in product2 %}
+        <tr>
+            <td>{{item.title}}</td>
+            <td>{{item.price}}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+</form>
+</body>
+</html>
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static' , filename= 'style.css') }}">
+    <title> Ecommerce Scraper </title>
+</head>
+<body>
+    <div class="conatainer">
+        <div class="header">{ Ecommerce Product Search Engine }</div>
+        <div class="search-field">
+            <form class="search_form" action="." method="post">
+                <div>
+                    <input type="text" placeholder="Enter Product Name" name="search_bar" autocomplete="off">
+                </div>
+                <div>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
