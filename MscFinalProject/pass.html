@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title> pass </title>
+
+    <style>
+
+        .content-table {
+            border-collapse: collapse ;
+            width: 100% ;
+            border-radius: 5px 5px 0 0 ;
+            overflow: hidden ;
+            }
+
+        .content-table thead tr {
+            background-color: #009879 ;
+            color: #ffffff ;
+            text-allign: left ;
+            font-weight: bold ;
+            }
+
+        .content-table th,
+        .content-table td {
+            padding: 12px 15px ;
+            }
+
+        .content-table tbody tr {
+            border-bottom: 1px solid #dddddd ;
+            }
+        .content-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3 ;
+            }
+
+        .content-table tbody tr:last-of-type {
+            border-bottom: 6px solid #009879 ;
+            }
+
+    </style>
+
+</head>
+
+<body>
+
+<form>
+
+    <table class="content-table">
+
+        <thead>
+
+            <tr>
+                <th><h2>Products from eBay</h2></th>
+                <th><h2>Specs/Condition</h2></th>
+                <th><h2>Price</h2></th>
+            </tr>
+
+        </thead>
+
+        {% for item in products %}
+        <tr>
+            <td> <a href="{{item.prod_link}}"/> {{item.prod_name}} </td>
+            <td>{{item.prod_subtitle}}</td>
+            <td>{{item.prod_price}}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+    <table class="content-table">
+
+        <thead>
+
+            <tr>
+                <th><h2>Products from Flipkart</h2></th>
+                <th><h2>Specs/Condition</h2></th>
+                <th><h2>Price</h2></th>
+            </tr>
+
+        </thead>
+
+        {% for item in product1 %}
+        <tr>
+            <td>{{item.prod_name1}}</td>
+            <td>{{item.prod_subtitle1}}</td>
+            <td>{{item.prod_price1}}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+    <table class="content-table">
+
+        <thead>
+
+            <tr>
+                <th><h2>Products from Snapdeal with Specs</h2></th>
+                <th><h2>Price</h2></th>
+            </tr>
+
+        </thead>
+
+        {% for item in product2 %}
+        <tr>
+            <td>{{item.prod_name2}}</td>
+            <td>{{item.prod_price2}}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+    <table class="content-table">
+
+        <thead>
+
+            <tr>
+                <th><h2>Products from Croma with Specs</h2></th>
+                <th><h2>Price</h2></th>
+            </tr>
+
+        </thead>
+
+        {% for item in product3 %}
+        <tr>
+            <td>{{item.prod_name3}}</td>
+            <td>{{item.prod_price3}}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+    <table class="content-table">
+
+        <thead>
+
+            <tr>
+                <th><h2>Products from Hilaptop.com</h2></th>
+                <th><h2>Price</h2></th>
+            </tr>
+
+        </thead>
+
+        {% for item in product4 %}
+        <tr>
+            <td>{{item.prod_name4}}</td>
+            <td>{{item.prod_price4}}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+</form>
+
+</body>
+
+</html>
+
