@@ -1,3 +1,9 @@
+%  An Englishman (Mr. Salmon), a Welshman (Mr. Green), and a Scotsman (Mr. Brown) met for lunch one day. 
+%  One man was wearing a salmon tie, another was wearing a green tie and the third was wearing a brown tie. "Isn't it funny," said Mr. Brown to the others, 
+%  "that not one of us is wearing a tie which matches our name?" "That's true," agreed the man wearing the green tie. Can you now say what color tie each man was wearing?
+
+%  Answer Set Programming was used as a declarative approach to creating stable models. 
+
 %Reference - stated the facts and rules practiced in the exercises of lab 2
 
 statement_by(brown).
